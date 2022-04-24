@@ -1,0 +1,11 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+     <section>
+       <ul >
+         <li *ngFor="let aula of aulas"[routerLink]="[aula.id]">{{ aula.aula }}</li>
+       </ul>
+     </section>
+  </mat-grid-tile>
+
+   <mat-grid-tile><router-outlet></router-outlet></mat-grid-tile>
+ </mat-grid-list>
